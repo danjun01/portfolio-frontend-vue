@@ -1,9 +1,18 @@
 import { createApp } from 'vue'
 import './assets/index.css'
 import App from './App.vue'
-// import { createPinia } from 'pinia';
+import { createMemoryHistory, createRouter } from 'vue-router';
+import HomeView from './components/HomeView.vue';
 
-// const pinia = createPinia()
+const routes = [
+  { path: '/', component: HomeView },
+]
+
+const router = createRouter({
+  history: createMemoryHistory(),
+  routes,
+})
+
 const app = createApp(App)
-// app.use(pinia)
+app.use(router)
 app.mount('#app')
