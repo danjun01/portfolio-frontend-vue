@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import DarkModeToggle from './DarkModeToggle.vue';
 import NavBar from './NavBar.vue';
 </script>
 
 <template>
   <div class="flex items-center justify-between w-full dark:text-white py-10">
     <div>
-      <a href="#top">
+      <a href="#intro">
         <h1 class="font-bold">Daniel Jun.</h1>
       </a>
     </div>

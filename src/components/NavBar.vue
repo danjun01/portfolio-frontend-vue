@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
+  // NavigationMenuContent,
+  // NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
+  // NavigationMenuTrigger,
+  // NavigationMenuViewport,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import DarkModeToggle from './DarkModeToggle.vue';
@@ -32,13 +32,13 @@ import DarkModeToggle from './DarkModeToggle.vue';
 
       <NavigationMenuItem>
         <NavigationMenuLink>
-          <a class="hover:dark:bg-zinc-800 hover:bg-zinc-100 py-2 px-4 rounded-md" href="#experience">Resume</a>
+          <a class="hover:dark:bg-zinc-800 hover:bg-zinc-100 py-2 px-4 rounded-md" href="#contact">Contact</a>
         </NavigationMenuLink>
       </NavigationMenuItem>
 
-      <NavigationMenuItem>
+     <NavigationMenuItem>
         <NavigationMenuLink>
-          <a class="hover:dark:bg-zinc-800 hover:bg-zinc-100 py-2 px-4 rounded-md" href="#contact">Contact</a>
+          <a class="hover:dark:bg-zinc-800 hover:bg-zinc-100 py-2 px-4 rounded-md" href="/blog">Blog</a>
         </NavigationMenuLink>
       </NavigationMenuItem>
 
