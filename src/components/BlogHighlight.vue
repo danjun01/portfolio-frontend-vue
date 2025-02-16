@@ -3,7 +3,7 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
+//   CardFooter,
   CardTitle,
 } from '@/components/ui/card';
 </script>

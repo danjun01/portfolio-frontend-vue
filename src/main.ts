@@ -13,7 +13,7 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,  
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(to, from) {
     if (to.hash) {
       console.log("Scrolling to ", to.hash, " from " , from.hash);
       return {
