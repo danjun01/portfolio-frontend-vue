@@ -10,7 +10,15 @@ import {
   // NavigationMenuViewport,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
+import { RouterLink } from 'vue-router';
 import DarkModeToggle from './DarkModeToggle.vue';
+
+// removed blog link for now
+// <NavigationMenuItem>
+//   <NavigationMenuLink>
+//     <RouterLink class="hover:dark:bg-zinc-800 hover:bg-zinc-100 py-2 px-4 rounded-md" to="/blog" replace>Blog</RouterLink>
+//   </NavigationMenuLink>
+// </NavigationMenuItem>
 
 </script>
 
@@ -20,27 +28,23 @@ import DarkModeToggle from './DarkModeToggle.vue';
 
       <NavigationMenuItem>
         <NavigationMenuLink>
-          <a class="hover:dark:bg-zinc-800 hover:bg-zinc-100 py-2 px-4 rounded-md" href='#projects'>Projects</a>
+          <RouterLink class="hover:dark:bg-zinc-800 hover:bg-zinc-100 py-2 px-4 rounded-md" to="/#projects" replace>Projects</RouterLink>
         </NavigationMenuLink>
       </NavigationMenuItem>
 
       <NavigationMenuItem>
         <NavigationMenuLink>
-          <a class="hover:dark:bg-zinc-800 hover:bg-zinc-100 py-2 px-4 rounded-md" href="#about">About</a>
+          <RouterLink class="hover:dark:bg-zinc-800 hover:bg-zinc-100 py-2 px-4 rounded-md" to="/#about" replace>About</RouterLink>
         </NavigationMenuLink>
       </NavigationMenuItem>
 
       <NavigationMenuItem>
         <NavigationMenuLink>
-          <a class="hover:dark:bg-zinc-800 hover:bg-zinc-100 py-2 px-4 rounded-md" href="#contact">Contact</a>
+          <RouterLink class="hover:dark:bg-zinc-800 hover:bg-zinc-100 py-2 px-4 rounded-md" to="/#contact" replace>Contact</RouterLink>
         </NavigationMenuLink>
       </NavigationMenuItem>
 
-     <NavigationMenuItem>
-        <NavigationMenuLink>
-          <a class="hover:dark:bg-zinc-800 hover:bg-zinc-100 py-2 px-4 rounded-md" href="/blog">Blog</a>
-        </NavigationMenuLink>
-      </NavigationMenuItem>
+     
 
       <NavigationMenuItem>
         <DarkModeToggle />
@@ -49,3 +53,4 @@ import DarkModeToggle from './DarkModeToggle.vue';
     </NavigationMenuList>
   </NavigationMenu>
 </template>
+
